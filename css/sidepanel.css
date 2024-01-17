@@ -1,0 +1,186 @@
+### Elements
+
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: Google Sans,Helvetica Neue,sans-serif;
+  color: #222222;
+}
+
+label {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+select: {
+  padding: 5px;
+}
+
+li {
+  padding: 5px;
+  min-height: 40px;
+  border-bottom:  1px solid #dadce0;
+}
+
+li:last-child {
+  padding: 5px;
+  height: 40px;
+  border-bottom:  1px solid transparent;
+}
+
+form {
+  min-width: inherit;
+}
+
+form > * {
+  min-width: 95%;
+  max-width: 95%;
+  margin: 5px auto;
+}
+
+table {
+  min-width: 100%;
+}
+
+thead {
+  font-weight: bold;
+}
+
+button {
+  background-color: #1a73e8;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  min-width: 100px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  padding: 7px;
+  transition: background-color .3s;
+}
+
+button:hover, button:focus {
+  background-color: #1459b3;
+}
+
+td > span {
+  width: 100px;
+  max-width: 200px;
+  overflow-x: auto;
+}
+
+### Classes
+
+.container {
+  min-width: 360px;
+  max-width: 720px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.delete {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  padding: 2px;
+}
+
+.block {
+  background-color: #fafafa;
+  border: 1px solid #dadce0;
+  border-radius: 2px;
+  padding: 10px;
+  max-width: 690px;
+  min-width: 330px;
+  margin: 10px auto;
+}
+
+.block > * {
+  width: inherit;
+  margin: 5px auto;
+}
+
+.header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #dadce0;
+  padding-bottom: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.header > * {
+  margin: auto 5px;
+  max-width: 30%;
+  min-width: 25%;
+  display: inline-block;
+}
+
+.remove-resource {
+  padding: 2px;
+  color: red;
+  height: 20px;
+  cursor: default;
+}
+
+### IDs
+
+#template-property-id {
+  float: right;
+}
+
+#property-ids {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: Google Sans,Helvetica Neue,sans-serif;;
+}
+
+#action-button {
+  padding: 5px;
+}
+
+#generate-csv {
+  padding: 0px 5px;
+  min-width: auto;
+}
+
+#clear-responses {
+  padding: 0px 5px;
+  min-width: auto;
+  background-color: #d93025de;
+  transition: background-color .3 s;
+}
+
+#clear-responses:hover, #clear-responses:focus {
+  background-color: #c5221f;
+}
+
+#response-buttons {
+  text-align: end;
+}
+
+#counts {
+  visibility: hidden;
+}
+
+#action-type {
+  border: 1px solid #dadce0;
+  border-radius: 2px;
+  padding: 5px;
+}

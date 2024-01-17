@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Analytics+",
+  "description": "Enables additional Google Analytics features.",
+  "version": "1.0",
+  "permissions": ["debugger", "sidePanel", "tabs"],
+  "host_permissions": ["https://analytics.google.com/*"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Click to open panel",
+    "default_sidepanel": "side_panel.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

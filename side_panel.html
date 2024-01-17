@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/sidepanel.css">
+    <script src="sidepanel.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Analytics+</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="block">
+        <form id="management-form">
+          <label for="template-property-id">Template Property ID</label>
+          <input type="text" id="template-property-id">
+          <label for="action-type">Action</label>
+          <select name="action-type" id="action-type">
+            <option value="create">Create</option>
+            <option value="update">Update</option>
+          </select>
+          <label for="csv-file">Upload CSV</label>
+          <input type="file" name="csv-file" id="csv-file" accept=".csv" multiple="false" disabled/>
+          <label for="property-ids">Destination Property IDs</label>
+            <textarea id="property-ids"></textarea>
+            <button id="action-button" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="block">
+          <div class="header">Resources</div>
+          <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Remove</td>
+            </tr>
+          </thead>
+          <tbody id="resource-list"></tbody>
+          </table>
+          <ul></ul>
+        </div>
+        <div class="responses-article block">
+          <div class="responses-header header">
+            <div>
+              Responses
+            </div>
+            <div id="counts" hidden="true">
+              <span id="action-count"></span> / 
+              <span id="total-actions"></span>
+            </div>
+            <div id="response-buttons">
+              <button id="generate-csv" disabled>
+                <span class="material-symbols-outlined">
+                  download
+                </span>
+              </button>
+              <button id="clear-responses" disabled>
+                <span class="material-symbols-outlined">
+                  clear_all
+                </span>
+              </button>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Response Code</td>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Property ID</td>
+              </tr>
+            </thead>
+            <tbody id="responses"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <a id="csv-link" href=""></a>
+  </body>
+</html>
